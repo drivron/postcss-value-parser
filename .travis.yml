@@ -18,13 +18,13 @@ cache:
 matrix:
   fast_finish: true
   include:
-    - node_js: '10'
+    - node_js: '12'
       script: npm run pretest
+    - node_js: '12'
+      script: npm run test
     - node_js: '10'
       script: npm run test
     - node_js: '8'
-      script: npm run test
-    - node_js: '6'
       script: npm run test
 
 before_install:
